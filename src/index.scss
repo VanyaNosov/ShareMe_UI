@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-weight: 400;
+    color: #060F42;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

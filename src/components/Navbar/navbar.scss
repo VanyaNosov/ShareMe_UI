@@ -1,0 +1,39 @@
+.navbar {
+  margin-bottom: 30px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  &__user-logo {
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  &__search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #FFFF;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  &__search {
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+  &__navigate {
+    display: flex;
+  }
+  &__create-pin {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #FFFF;
+    background-color: black;
+  }
+}

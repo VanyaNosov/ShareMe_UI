@@ -1,0 +1,118 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  &__image-block {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  &__image {
+    max-width: 100%;
+    border-radius: 25px 25px 10px 10px;
+  }
+  &__links-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 240 240/var(--tw-bg-opacity));
+    opacity: 0.5;
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &__image-download {
+    display: flex;
+  }
+  &__info-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+  }
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__links-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__user-block {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__user-name {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+  }
+  &__user-icon {
+    width: 35px;
+    border-radius: 100px;
+  }
+  &__add-comments-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  &__comment-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__more-pins-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__comment-input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid rgb(243 244 246);
+  }
+  &__add-comment-btn {
+    color: white;
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+     &:hover {
+      opacity: 0.7;
+     }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .post {
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 20px;
+    &__links-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

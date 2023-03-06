@@ -1,0 +1,55 @@
+.home {
+  background-color: rgb(249 250 251);
+  height: 100vh;
+  &__logo-img {
+    width: 120px;
+  }
+  &__user-logo-block {
+    display: flex;
+    align-items: center;
+  }
+  &__user-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  &__content {
+    margin-left: 0;
+    padding: 20px;
+    background-color: rgb(249, 250, 251);
+  }
+  &__sidebar-block {
+    display: flex;
+  }
+}
+
+.header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0.2px 0.4px 5px gray;
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    display: none;
+  }
+  .home__content {
+    margin-left: 200px;
+  }
+  .home__sidebar-block {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home__sidebar-block {
+    display: none;
+  }
+}
